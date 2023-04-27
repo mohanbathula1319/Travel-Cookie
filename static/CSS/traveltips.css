@@ -1,0 +1,212 @@
+.content {
+    display: flex;
+  flex-direction: row;
+}
+
+.content main {
+    margin-left: 50px; 
+    margin-right: 50px;
+  }
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+
+nav {
+  background-color: #1e272e;
+  padding: 10px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; 
+}
+
+nav ul li {
+  margin-left: 20px; 
+}
+
+nav ul li:first-child {
+  margin-left: 0
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #2685b5;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo span {
+  font-size: 24px;
+  margin-left: 10px;
+}
+nav ul li.logo {
+  margin: 0;
+  flex: none;
+}
+
+nav ul li.logo a {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-indent: -9999px;
+}
+
+nav ul li {
+  margin-left: 20px; 
+  position: relative;
+}
+
+nav ul li ul.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1e272e;
+  padding: 10px;
+  display: none;
+  z-index: 999;
+}
+
+nav ul li:hover ul.dropdown-menu {
+  display: block;
+}
+
+nav ul li ul.dropdown-menu li {
+  margin: 0;
+}
+
+nav ul li ul.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li ul.dropdown-menu li a:hover {
+  background-color: #2685b5;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  font-size: 18px;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+section ul li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* Style for the tips section */
+ol {
+    font-size: 18px;
+    line-height: 1.5;
+    list-style: decimal;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1e272e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #df9307;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+

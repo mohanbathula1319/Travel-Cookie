@@ -1,0 +1,84 @@
+  body::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.741); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form, .signup-form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.844);
+  }
+  
+  .login-form h1, .signup-form h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .show-password {
+    margin-left: 5px;
+    color: #2685b5;
+    cursor: pointer;
+  }
+  
+  #signup-form {
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+#login-form {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #ccc;
+    color: #2685b5;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .btn:hover {
+    background-color: #2685b5;
+    color: black;
+  }
+  
